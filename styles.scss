@@ -1,0 +1,215 @@
+$color1: rgba(3,152,141,1);
+$color2: rgba(4,109,110,1);
+$color1_80: rgba(3,152,141,.8);
+
+$black: #000;
+$gray_80: rgba(0,0,0,0.8);
+$offwhite: rgba(255,255,255,0.9);
+
+.title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	color: $color1;
+}
+
+.text {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 100;
+}
+
+p {
+	@extend .text;
+	font-size: 1.2rem;
+}
+
+a { 
+	@extend .text;
+	color: $color1;
+
+	&:hover {
+		color: $color2;
+	}
+}
+
+h1, h2, h3, h4 { @extend .title; }
+
+.b-content-section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid $color1;
+	background-color: $offwhite;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.m-panel {
+	background-color: $color2;
+	h1, h2, p {color: $offwhite; }
+}
+
+.button {
+	background-color: $color1_80;
+
+	&:hover {
+		background-color: $color2;
+	}
+}
+
+.b-social-media {
+	text-align: center;
+
+	a {
+		display: inline-block;
+		box-sizing: border-box;
+		height: 60px;
+		width: 60px;
+		margin: 10px;
+		padding: 16px;
+		border-radius: 50%;
+		background-color: $color1;
+		color: $offwhite;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+		&:hover {
+			background-color: $color2;
+		}
+	}
+}
+
+#landing {
+	background-image: url(img/seena-home.jpg);
+	background-size: cover;
+	padding-bottom: 55%;
+	height: 0;
+}
+
+.b-site-title {
+	margin-bottom: 40px;
+}
+
+.b-footer {
+	background-color: $gray_80;
+	padding: 40px 0;
+
+	p {
+		font-size: .8rem;
+		text-align: center;
+		color: white;
+	}
+}
+
+// Small screens
+@media only screen {
+
+.b-content-section iframe {
+	width: 340px;
+	height: 190px;
+}
+
+.b-site-title { margin-top: 230px;
+	h1, p {color: $offwhite;}
+}
+
+.b-text {
+	margin-top: 30px;
+}
+
+#menu {
+	h4 {font-size: 2rem;}
+	
+	ul {
+		margin: 0;
+	}
+
+	li {
+		display: block;
+		margin: 20px auto;
+		padding: 10px;
+		width: 100%;
+		background-color: $color1;
+		text-align: center;
+
+		a {
+			display: block;
+			font-size: 1.5rem;
+			color: $offwhite;
+			padding: 10px 10px;
+		}
+	}	
+}
+
+#menu-trigger {
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	z-index: 1000;
+}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+// Ipads
+@media only screen and (min-width: 40.063em) {
+.b-site-title {
+	float: right;
+	width: 50%;
+	margin-top: 70px;
+
+	h1, p {	text-align: right; }
+	h1 { 
+		font-size: 4rem;
+		color: $color1; 
+	}
+
+	p {color: $black;}
+}
+
+h2 {margin: 30px 0;}
+
+.b-content-section iframe {
+	width: 960px;
+	height: 500px;
+}
+
+#menu li {
+	width: 60%;
+}
+
+}
+
+// Computers 
+@media only screen and (min-width: 64.063em) {
+
+h1 { font-size: 8rem;}
+h2 { font-size: 4rem;}
+
+.b-menu {
+	text-align: center;
+	padding: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	background-color: $color1_80;
+	height: 30px;
+
+	ul {
+		margin: 0;
+		padding-top: 3px;
+	}
+
+	li { 
+		display: inline-block;
+		margin: 0;
+	}
+
+	a {
+		padding: 8px 15px 6px;
+		color: $offwhite;
+	}
+
+	a:hover {
+		background-color: $offwhite;
+		color: $color2;
+	}
+}
+}
