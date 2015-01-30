@@ -151,6 +151,9 @@ a {
       color: rgba(255, 255, 255, 0.9); }
     .b-menu a:hover {
       background-color: rgba(255, 255, 255, 0.9);
-      color: #046d6e; } }
+      color: #046d6e; }
+
+  #menu-trigger {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
