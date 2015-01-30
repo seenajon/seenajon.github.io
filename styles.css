@@ -1,0 +1,156 @@
+.title, h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: #03988d; }
+
+.text, p, a {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 100; }
+
+p {
+  font-size: 1.2rem; }
+
+a {
+  color: #03988d; }
+  a:hover {
+    color: #046d6e; }
+
+.b-content-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #03988d;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+
+.m-panel {
+  background-color: #046d6e; }
+  .m-panel h1, .m-panel h2, .m-panel p {
+    color: rgba(255, 255, 255, 0.9); }
+
+.button {
+  background-color: rgba(3, 152, 141, 0.8); }
+  .button:hover {
+    background-color: #046d6e; }
+
+.b-social-media {
+  text-align: center; }
+  .b-social-media a {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #03988d;
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+    .b-social-media a:hover {
+      background-color: #046d6e; }
+
+#landing {
+  background-image: url(img/seena-home.jpg);
+  background-size: cover;
+  padding-bottom: 55%;
+  height: 0; }
+
+.b-site-title {
+  margin-bottom: 40px; }
+
+.b-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 0; }
+  .b-footer p {
+    font-size: .8rem;
+    text-align: center;
+    color: white; }
+
+@media only screen {
+  .b-content-section iframe {
+    width: 340px;
+    height: 190px; }
+
+  .b-site-title {
+    margin-top: 230px; }
+    .b-site-title h1, .b-site-title p {
+      color: rgba(255, 255, 255, 0.9); }
+
+  .b-text {
+    margin-top: 30px; }
+
+  #menu h4 {
+    font-size: 2rem; }
+  #menu ul {
+    margin: 0; }
+  #menu li {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    background-color: #03988d;
+    text-align: center; }
+    #menu li a {
+      display: block;
+      font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.9);
+      padding: 10px 10px; }
+
+  #menu-trigger {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1000; } }
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .b-site-title {
+    float: right;
+    width: 50%;
+    margin-top: 70px; }
+    .b-site-title h1, .b-site-title p {
+      text-align: right; }
+    .b-site-title h1 {
+      font-size: 4rem;
+      color: #03988d; }
+    .b-site-title p {
+      color: #000; }
+
+  h2 {
+    margin: 30px 0; }
+
+  .b-content-section iframe {
+    width: 960px;
+    height: 500px; }
+
+  #menu li {
+    width: 60%; } }
+@media only screen and (min-width: 64.063em) {
+  h1 {
+    font-size: 8rem; }
+
+  h2 {
+    font-size: 4rem; }
+
+  .b-menu {
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background-color: rgba(3, 152, 141, 0.8);
+    height: 30px; }
+    .b-menu ul {
+      margin: 0;
+      padding-top: 3px; }
+    .b-menu li {
+      display: inline-block;
+      margin: 0; }
+    .b-menu a {
+      padding: 8px 15px 6px;
+      color: rgba(255, 255, 255, 0.9); }
+    .b-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #046d6e; } }
+
+/*# sourceMappingURL=styles.css.map */
