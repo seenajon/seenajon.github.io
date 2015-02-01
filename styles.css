@@ -16,6 +16,9 @@ a {
   a:hover {
     color: #046d6e; }
 
+.byline {
+  opacity: .7; }
+
 .b-content-section {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -123,7 +126,10 @@ a {
     height: 500px; }
 
   #menu li {
-    width: 60%; } }
+    width: 60%; }
+
+  .b-text {
+    margin-top: 0; } }
 @media only screen and (min-width: 64.063em) {
   h1 {
     font-size: 8rem; }
@@ -154,6 +160,9 @@ a {
       color: #046d6e; }
 
   #menu-trigger {
-    display: none; } }
+    display: none; }
+
+  .b-text {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
